@@ -9,23 +9,6 @@
 
 A lightweight REST API built with Node.js and Express. The project packages the API in a Docker image and uses GitHub Actions to publish the image to Docker Hub and deploy it to an AWS EC2 instance. At startup, the application also creates a public ngrok tunnel to its local port.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [How It Works](#how-it-works)
-- [API](#api)
-- [Run Locally](#run-locally)
-- [Run with Docker](#run-with-docker)
-- [Environment Variables](#environment-variables)
-- [Continuous Deployment](#continuous-deployment)
-- [Project Structure](#project-structure)
-- [Limitations](#limitations)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Author](#author)
-
 ## Features
 
 - Express REST API for basic in-memory user records
@@ -126,15 +109,7 @@ Example response:
   "message": "Application is working fine"
 }
 ```
-
-Add a user:
-
-```bash
-curl -X POST $BASE_URL/users \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Alex","email":"alex@example.com"}'
-```
-
+ 
 Get all users or the first user:
 
 ```bash
