@@ -1,4 +1,4 @@
- 
+
 name: Deploy to AWS EC2 with Docker
 
 on:
@@ -39,6 +39,7 @@ jobs:
           ssh -i private-key.pem \
             -o StrictHostKeyChecking=no \
             ubuntu@${{ secrets.EC2_HOST }} <<'EOF'
+              set -e
 
               sudo docker pull ahmeddevx07/tasks-project:latest
 
@@ -48,10 +49,13 @@ jobs:
               sudo docker run -d \
                 --name tasks-project \
                 --restart unless-stopped \
+                --env-file /home/ubuntu/tasks-project.env \
                 -p 3000:3000 \
                 ahmeddevx07/tasks-project:latest
 
+              sleep 5
               sudo docker ps
+              sudo docker logs --tail 50 tasks-project
           EOF
 
       - name: Clean up SSH key
