@@ -246,10 +246,16 @@ Contributions are welcome.
 4. Push the branch: `git push origin feature/your-feature`
 5. Open a Pull Request
 
-## License
+---
+ 
+## 👨‍💻 Author
 
-Add a `LICENSE` file to the repository (for example, MIT) and reference it here, e.g. `Distributed under the MIT License. See LICENSE for details.`
+**Muhammad Ahmed (AhmedDevx07)**  
+ 
+### 🌐 Connect With Me
 
-## Author
+* 🐙 GitHub: https://github.com/AhmedDevx07  
+* 💼 LinkedIn: https://linkedin.com/in/ahmeddevx07  
+* 🌐 Portfolio: https://ahmeddevx07.vercel.app/
 
-**Ahmed** — [@ahmeddevx07](https://github.com/ahmeddevx07)
+---
